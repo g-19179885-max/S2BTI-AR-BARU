@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S2BTI AR Satelit</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #06152e;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 65vh;
+      background: #10294b;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>S2BTI</h1>
+  <h3>Showcase Satellite Beyond The Imagination</h3>
+  <p>Putar dan lihat model satelit 3D anda.</p>
+
+  <model-viewer
+    src="Terra.glb"
+    alt="Model satelit S2BTI"
+    camera-controls
+    auto-rotate
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    shadow-intensity="1">
+  </model-viewer>
+
+  <p>Tekan butang AR pada telefon yang menyokongnya.</p>
+</body>
+</html>
